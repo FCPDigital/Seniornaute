@@ -81,16 +81,19 @@
       margin-left: 0.9375rem;
       white-space: nowrap;
     }
-    .user-info {
+    .user-info a {
       padding: 13px;
       text-align: center;
       background-color: #016bae;
       margin-bottom: 10px;
       width: 150px;
       display: inline-block;
-      a {
-        line-height: 10px;
-        color: white;
+      color: white;
+      border: 1px solid #016bae;
+      transition: .4s;
+      &:hover {
+        background-color: white;
+        color: #016bae;
       }
       .account {
         margin-left: $small-space;
