@@ -37,15 +37,15 @@
         <ul class="footer__list">
           <li class="footer__list-item"><a href="/">Produits</a></li>
           <li class="footer__list-item"><a href="/content/4-a-propos">A propos</a></li>
-          <li class="footer__list-item"><a href="/nous-contacter">Contactez-nous</a></li>
+          <li class="footer__list-item"><a href="/contact-us">Contactez-nous</a></li>
         </ul>
       </div>
 
       <div class="col-sm-4 footer__section">
         <h3 class="footer__title">Compte</h3>
         <ul class="footer__list">
-          <li class="footer__list-item"><a href="/mon-compte">Mon Compte</a></li>
-          <li class="footer__list-item"><a href="/historique-commandes">Mes commandes</a></li>
+          <li class="footer__list-item"><a href="/my-account">Mon Compte</a></li>
+          <li class="footer__list-item"><a href="/order-history">Mes commandes</a></li>
           <li class="footer__list-item"><a href="/panier?action=show">Mon panier</a></li>
         </ul>
       </div>
@@ -65,9 +65,9 @@
       <div class="col-md-12 copyright-container">
         <p class="text-sm-center">
           {block name='copyright_link'}
-            <a href="/mentions-legales">Mention légales</a> | 
-            <a href="/conditions-utilisation">Condition générales de ventes</a> |
-            <a target="_blank" href="/a-propos">{l s='%copyright%  %year%' sprintf=['%year%' => 'Y'|date, '%copyright%' => '©'] d='Shop.Theme.Global'} Seniornaute</a> |
+            <a href="/content/2-mentions-legales">Mention légales</a> | 
+            <a href="/content/3-conditions-utilisation">Condition générales de ventes</a> |
+            <a target="_blank" href="/content/4-a-propos">{l s='%copyright%  %year%' sprintf=['%year%' => 'Y'|date, '%copyright%' => '©'] d='Shop.Theme.Global'} Seniornaute</a> |
             <a target="_blank" href="http://www.fcp-digital.com/">Assemblé par FCP Digital</a>
           {/block}
         </p>
