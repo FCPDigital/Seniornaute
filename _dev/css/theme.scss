@@ -158,6 +158,9 @@
       font-size: 25px;
       font-weight: bold;
       transition: .4s;
+      a {
+        color: $brand-secondary;
+      }
     }
     .search-widget {
       display: inline-block;

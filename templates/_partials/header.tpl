@@ -36,7 +36,7 @@
             <div class="col-sm-3 hidden-sm-down header-nav__part float-down">
               <p class="header-phone">
                 <i class="material-icons d-inline">phone</i> 
-                05 56 34 46 05
+                <a href="tel:+33556344605">05 56 34 46 05</a>
               </p>
             </div>
           <!-- </div> -->
