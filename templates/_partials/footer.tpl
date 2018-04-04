@@ -32,22 +32,43 @@
 <div class="footer-container">
   <div class="container">
     <div class="row">
-      {block name='hook_footer'}
-        {hook h='displayFooter'}
-      {/block}
-    </div>
-    <div class="row">
-      {block name='hook_footer_after'}
-        {hook h='displayFooterAfter'}
-      {/block}
-    </div>
-    <div class="row">
-      <div class="col-md-12 mt-1">
+    <div class="col-sm-4 footer__section">
+        <h3 class="footer__title">Plan du site</h3>
+        <ul class="footer__list">
+          <li class="footer__list-item"><a href="/">Produits</a></li>
+          <li class="footer__list-item"><a href="/content/4-a-propos">A propos</a></li>
+          <li class="footer__list-item"><a href="/nous-contacter">Contactez-nous</a></li>
+        </ul>
+      </div>
+
+      <div class="col-sm-4 footer__section">
+        <h3 class="footer__title">Compte</h3>
+        <ul class="footer__list">
+          <li class="footer__list-item"><a href="/mon-compte">Mon Compte</a></li>
+          <li class="footer__list-item"><a href="/historique-commandes">Mes commandes</a></li>
+          <li class="footer__list-item"><a href="/panier?action=show">Mon panier</a></li>
+        </ul>
+      </div>
+
+      <div class="col-sm-4 footer__section">
+        <h3 class="footer__title">Paiement</h3>
+        <div class="footer__payments">
+          <img class="footer__payment" src="{$smarty.const._THEME_IMG_DIR_}/icon/picto-visa.png" alt="Paiement par VISA">
+          <img class="footer__payment" src="{$smarty.const._THEME_IMG_DIR_}/icon/picto-mastercard.png" alt="Paiement par Mastercard">
+          <img class="footer__payment" src="{$smarty.const._THEME_IMG_DIR_}/icon/picto-paypal.png" alt="Paiement par Paypal">
+          <div class="footer__payment--fullsize">
+            <img class="footer__payment-cheque" src="{$smarty.const._THEME_IMG_DIR_}/icon/picto-cheque.png" alt="Paiement par Chèque">
+            <p>Paiement par chèque</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-12 copyright-container">
         <p class="text-sm-center">
           {block name='copyright_link'}
-            <a class="_blank" href="http://www.prestashop.com" target="_blank">
-              {l s='%copyright% %year% - Ecommerce software by %prestashop%' sprintf=['%prestashop%' => 'PrestaShop™', '%year%' => 'Y'|date, '%copyright%' => '©'] d='Shop.Theme.Global'}
-            </a>
+            <a href="/mentions-legales">Mention légales</a> | 
+            <a href="/conditions-utilisation">Condition générales de ventes</a> |
+            <a target="_blank" href="/a-propos">{l s='%copyright%  %year%' sprintf=['%year%' => 'Y'|date, '%copyright%' => '©'] d='Shop.Theme.Global'} Seniornaute</a> |
+            <a target="_blank" href="http://www.fcp-digital.com/">Assemblé par FCP Digital</a>
           {/block}
         </p>
       </div>

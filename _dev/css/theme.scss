@@ -528,5 +528,11 @@
     } 
   }
 }
-
-
+.copyright-container {
+  padding: 15px;
+  border-top: 1px solid white; 
+  margin-top: 15px;
+  p {
+    margin-bottom: 0;
+  }
+}
