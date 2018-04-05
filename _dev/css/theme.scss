@@ -247,11 +247,14 @@
     display: block;
     width: calc(100% + 30px);
     margin-left: -15px;
+    background-repeat: no-repeat;
+    background-size: cover;
     img {
       box-shadow: 1px 1px 7px 0 rgba(0, 0, 0, 0.15);
       width: 100%;
     }
   }
+  
   .breadcrumb {
     background: transparent;
     padding: 0;
@@ -470,6 +473,29 @@
   .hidden-sm-up {
     display: block; 
   }
+  .banner__title, .banner__content {
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .carousel {
+    .carousel-control {
+      width: 50px;
+      .icon-prev {
+        margin-left: -20px;
+      }
+    }
+    .carousel-item .caption {
+      max-width: calc(100% - 70px);
+      h2 {
+        font-size: 2em;
+      }
+    }
+  }
+  .carousel .carousel-item .caption {
+
+  }
+
   #header .header-nav {
     margin-bottom: 0;
     #log-part.header-nav__part {
