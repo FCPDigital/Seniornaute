@@ -360,6 +360,15 @@
       }
       .btn {
         white-space: inherit;
+        &.btn-primary {
+          padding-left: 45px;
+          position: relative;
+          .material-icons {
+            position: absolute;
+            left: 10px;
+            top: 5px;
+          }
+        }
       }
     }
   }
