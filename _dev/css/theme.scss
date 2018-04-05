@@ -154,6 +154,7 @@
     #_desktop_logo {
       text-align: center;
       margin: 0px;
+      margin-top: 20px;
     }
     .header-phone {
       margin-bottom: 0;
@@ -470,14 +471,23 @@
 }
 
 @include media-breakpoint-down(sm) {
+
+  .page-my-account #content .links a i {
+    padding-bottom: 0.5rem;
+  }
+
   #header .header-nav .user-info {
     a {
       padding: 12px;
       width: 50px;
+      .logged {
+        color: white;
+      }
+      &:hover .logged {
+        color: #016bae; 
+      }
     }
-    .logged {
-      color: white;
-    }
+  
   }
   .hidden-sm-up {
     display: block; 
