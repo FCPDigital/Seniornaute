@@ -12,12 +12,18 @@
   }
   .carousel-item {
     height: 100%;
+    figure {
+      margin-bottom: 0;
+    }
     img {
       @media (max-width: 767px) {
         height: 100%;
       }
       @media (min-width: 768px) {
-        width: 100%;
+        min-height: 100%;
+        min-width: 100%;
+        width: auto; 
+        height: auto;
         margin-left: 0;
       }
     }
