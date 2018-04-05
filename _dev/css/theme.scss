@@ -470,6 +470,15 @@
 }
 
 @include media-breakpoint-down(sm) {
+  #header .header-nav .user-info {
+    a {
+      padding: 12px;
+      width: 50px;
+    }
+    .logged {
+      color: white;
+    }
+  }
   .hidden-sm-up {
     display: block; 
   }
@@ -487,7 +496,7 @@
     }
     .carousel-item .caption {
       max-width: calc(100% - 70px);
-      a h2 {
+      a .display-1 {
         font-size: 2em;
       }
     }
