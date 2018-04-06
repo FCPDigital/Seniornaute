@@ -486,6 +486,9 @@
       &:hover .logged {
         color: #016bae; 
       }
+      &.logout {
+        display: none;
+      }
     }
   
   }
@@ -580,4 +583,8 @@
   p {
     margin-bottom: 0;
   }
+}
+
+.float-xs-right {
+  float: right;
 }
