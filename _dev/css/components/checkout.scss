@@ -436,6 +436,11 @@ body#checkout {
     margin-top: 0.25rem;
     margin-left: $medium-space;
   }
+  
+  body#checkout section.checkout-step .delivery-option img {
+    width: 100%;
+  }
+
   body#checkout {
     section.checkout-step {
       .content {
