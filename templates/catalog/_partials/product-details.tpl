@@ -26,6 +26,10 @@
     {/if}
   {/block}
 
+  <div class="product-description>
+    {$product.description}
+  </div>
+  
   {block name='product_quantities'}
     {if $product.show_quantities}
       <div class="product-quantities">

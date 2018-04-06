@@ -95,6 +95,9 @@
         background-color: white;
         color: #016bae;
       }
+      &.logout {
+        display: none;
+      }
       .account {
         margin-left: $small-space;
       }
@@ -485,9 +488,6 @@
       }
       &:hover .logged {
         color: #016bae; 
-      }
-      &.logout {
-        display: none;
       }
     }
   
