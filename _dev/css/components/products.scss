@@ -360,13 +360,17 @@
       }
       .btn {
         white-space: inherit;
+        display: flex; 
+        flex-direction: column;
+        justify-content: center;
         &.btn-primary {
           padding-left: 45px;
           position: relative;
           .material-icons {
             position: absolute;
             left: 10px;
-            top: 5px;
+            top: 50%;
+            transform: trasnlateY(-50%);
           }
         }
       }
