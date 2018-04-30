@@ -45,15 +45,10 @@
           max-width: 340px;
         }
       }
-      @media (min-width: 768px) {
-        //left: 90px;
-        //top: 50%;
-        //transform: translateY(-50%);
-      }
       @media (max-width: 767px) {
-        //top: 50%;
-        //transform: translateY(-50%);
-        //left: 40px;
+        .caption__container {
+          padding-left: 50px;
+        }
       }
       color: white;
       .caption-description p {
