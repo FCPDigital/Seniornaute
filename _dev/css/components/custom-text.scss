@@ -5,15 +5,17 @@
   padding: 3.125rem 3.125rem;
   text-align: left;
   h3 {
-    text-transform: uppercase;
     color: $gray-darker;
-    font-size: 1.563rem;
+    font-size: 1.4em;
     font-weight: 700;
+    margin-top: 45px;
+    margin-bottom: 25px;
   }
   p {
     color: $gray-darker;
     font-weight: 400;
-    font-size: 1.1em;
+    font-size: 1em;
+    line-height: 1.5em;
     .dark {
       color: $gray;
       font-weight: 400;
@@ -30,6 +32,16 @@
     }
   }
 }
+
+.custom-text__title {
+  text-align: center;
+  margin: 3rem 0;
+  color: $brand-secondary;
+  letter-spacing: 1px;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid $brand-secondary;
+}
+
 @include media-breakpoint-down(md) {
   #block-cmsinfo {
     padding: $medium-space $large-space;
