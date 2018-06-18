@@ -158,15 +158,6 @@
                          {if $product.description} aria-selected="true"{/if}>{l s='Description' d='Shop.Theme.Catalog'}</a>
                     </li>
                   {/if}
-                  <li class="nav-item">
-                    <a
-                      class="nav-link{if !$product.description} active{/if}"
-                      data-toggle="tab"
-                      href="#product-details"
-                      role="tab"
-                      aria-controls="product-details"
-                      {if !$product.description} aria-selected="true"{/if}>{l s='Product Details' d='Shop.Theme.Catalog'}</a>
-                  </li>
                   {if $product.attachments}
                     <li class="nav-item">
                       <a
@@ -194,11 +185,17 @@
                    {block name='product_description'}
                      <div class="product-description">{$product.description nofilter}</div>
                    {/block}
+                   {if isset($product.reference_to_display)}
+                    <div class="product-reference">
+                      <label class="label">{l s='Reference' d='Shop.Theme.Catalog'} </label>
+                      <span itemprop="sku">{$product.reference_to_display}</span>
+                    </div>
+                    {/if}
                  </div>
 
-                 {block name='product_details'}
-                   {include file='catalog/_partials/product-details.tpl'}
-                 {/block}
+                {*block name='product_details'}
+                {include file='catalog/_partials/product-details.tpl'}
+                {/block*}
 
                  {block name='product_attachments'}
                    {if $product.attachments}
