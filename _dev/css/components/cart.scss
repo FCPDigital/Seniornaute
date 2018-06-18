@@ -1,5 +1,12 @@
 .cart-grid {
   margin-bottom: 1rem;
+  .label {
+    line-height: 24px;
+    display: inline-block;
+    .material-icons {
+      float: left;
+    }
+  }
 }
 .cart-items {
   margin-bottom: 0;
@@ -26,6 +33,13 @@
     }
   }
 }
+
+.cart-summary-products {
+  .product-price {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+}
 /** CART BODY **/
 .cart-grid-body {
   a.label {
@@ -43,6 +57,10 @@
     padding: 1rem;
   }
   margin-bottom: 0.75rem;
+
+  .price, .regular-price, .product-price {
+    font-size: 22px;
+  }
 }
 /** CART RIGHT **/
 .cart-grid-right {
