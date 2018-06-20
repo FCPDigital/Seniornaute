@@ -67,7 +67,7 @@
 
 {block name='header_top'}
   <div class="header-top">
-    <div class="container">
+    <div class="container-fluid">
        <div class="row">
         
         <div class="position-static">
